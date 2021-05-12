@@ -27,7 +27,11 @@ USAGE
 ```
 <!-- usagestop -->
 # Commands
-`path` => creates a new test file from a given file path
+`path` => creates a new test file from a given file path (required)
+
+
+# Args
+`svc` => name of test file extension, e.g. `svc`
 
 
 ## Testing locally

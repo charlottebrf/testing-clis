@@ -25,6 +25,8 @@ class Mynewcli extends Command {
     }
 
     const baseName = path.basename(flags.path).split('.')[0];
+    
+    // check if args.fileType is a valid file type
     const testFileType = args.fileType ?? 'svc';
     const testFileName = `${baseName}.spec.${testFileType}.ts`;
     fs.writeFile(path.join(__dirname, testFileName), 'Hey some awesome test file content', function (err: Error) {
